@@ -9,8 +9,10 @@ fun main() {
     val jedis = Jedis("0.0.0.0", 6451)
 
     jedis.set("mkey", "myvalue")
+    jedis.set("mkey1", "myvalue1")
+    jedis.set("mkey2", "myvalue2")
 
-    val value = jedis.get("mkey")
+    val value = jedis.get("mkey1")
     println(value)
 
     jedis.close()
