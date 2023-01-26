@@ -23,7 +23,7 @@ fun Application.configureUserRouting() {
            }else {
                call.respondText("Key not found")
            }
-           jedis.close()
+
        }
 
    }
