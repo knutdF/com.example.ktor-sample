@@ -8,17 +8,22 @@ import io.ktor.server.application.*
 
 
 fun Application.configureUserRouting() {
+    val keyInput = readln()!!
+
    routing {
        get("/user"){
            val jedis = Jedis("0.0.0.0", 6451)
+         //val keyInput = readln()!!
 
-           val user =jedis.get("foo")
+           val user =jedis.get("$keyInput")
+
            if (user != null) {
                call.respondText("$user")
 
            }else {
                call.respondText("Key not found")
            }
+           jedis.close()
        }
 
    }
