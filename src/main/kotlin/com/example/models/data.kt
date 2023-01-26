@@ -1,8 +1,7 @@
 package com.example.models
 
-package com.example.models
 
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Customer(val id: String, val firstName: String, val lastName: String, val email: String)
+data class data(val id: String, val key: String)

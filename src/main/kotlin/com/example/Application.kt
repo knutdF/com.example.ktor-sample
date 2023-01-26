@@ -11,6 +11,8 @@ fun main() {
 }
 
 fun Application.module() {
-    configureSerialization()
+   // configureSerialization()
     configureRouting()
+    configureUserRouting()
 }
+

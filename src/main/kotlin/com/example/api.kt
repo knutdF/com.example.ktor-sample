@@ -8,7 +8,7 @@ import okhttp3.Request
 fun main() {
    // val token: String = ""
    // val data: String = ""
-    val url = "https://demo23.matrixreq.com/rest/1/project/configcheck"
+    val url = "https://vivira.matrixreq.com/rest/1/project/configcheck"
 
     val client = OkHttpClient()
 
